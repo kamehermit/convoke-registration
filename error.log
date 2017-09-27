@@ -1,0 +1,324 @@
+2017/09/22 12:17:55 [error] 2081#2081: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueExcepti...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /srv/http/hashhacks/vendor/la
+2017/09/22 12:17:58 [error] 2081#2081: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueExcepti...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /srv/http/hashhacks/vendor/la
+2017/09/22 12:17:59 [error] 2081#2081: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueExcepti...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /srv/http/hashhacks/vendor/la
+2017/09/22 12:17:59 [error] 2081#2081: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueExcepti...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /srv/http/hashhacks/vendor/la
+2017/09/22 12:18:00 [error] 2081#2081: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueExcepti...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /srv/http/hashhacks/vendor/la
+2017/09/22 12:18:02 [error] 2081#2081: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueExcepti...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /srv/http/hashhacks/vendor/la
+2017/09/22 12:18:04 [error] 2081#2081: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueExcepti...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /srv/http/hashhacks/vendor/la
+2017/09/22 12:18:05 [error] 2081#2081: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueExcepti...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /srv/http/hashhacks/vendor/la
+2017/09/22 12:21:47 [error] 2081#2081: *10 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueExcepti...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /srv/http/hashhacks/vendor/l
+2017/09/22 12:21:48 [error] 2081#2081: *10 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueExcepti...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /srv/http/hashhacks/vendor/l
+2017/09/22 12:21:49 [error] 2081#2081: *14 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueExcepti...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /srv/http/hashhacks/vendor/l
+2017/09/22 12:21:49 [error] 2081#2081: *14 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueExcepti...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /srv/http/hashhacks/vendor/l
+2017/09/22 12:21:49 [error] 2081#2081: *14 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueExcepti...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /srv/http/hashhacks/vendor/l
+2017/09/22 12:22:31 [error] 2081#2081: *14 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueExcepti...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /srv/http/hashhacks/vendor/l
+2017/09/22 12:22:32 [error] 2081#2081: *14 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueExcepti...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /srv/http/hashhacks/vendor/l
+2017/09/22 12:22:32 [error] 2081#2081: *21 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueExcepti...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /srv/http/hashhacks/vendor/l
+2017/09/22 12:22:33 [error] 2081#2081: *24 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueExcepti...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /srv/http/hashhacks/vendor/l
+2017/09/22 12:22:33 [error] 2081#2081: *29 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueExcepti...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/srv/http/hashhacks/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /srv/http/hashhacks/vendor/monolog/monolog/src/Monolog/Logger.php(616): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /srv/http/hashhacks/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /srv/http/hashhacks/vendor/l
+2017/09/22 22:53:28 [error] 402#402: *15 open() "/srv/http/hashhacks/public/images/cicada21.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/cicada21.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 22:53:28 [error] 402#402: *15 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 22:53:28 [error] 402#402: *15 open() "/srv/http/hashhacks/public/event/images/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /event/images/favicon.ico HTTP/1.1", host: "hashhacks.dev"
+2017/09/22 22:53:30 [error] 402#402: *15 open() "/srv/http/hashhacks/public/images/cicada21.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/cicada21.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 22:53:30 [error] 402#402: *15 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 22:53:36 [error] 402#402: *15 open() "/srv/http/hashhacks/public/images/cicada21.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/cicada21.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 22:53:36 [error] 402#402: *15 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 22:53:36 [error] 402#402: *15 open() "/srv/http/hashhacks/public/images/cicada21.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/cicada21.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 22:53:36 [error] 402#402: *23 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 22:56:06 [error] 402#402: *25 open() "/srv/http/hashhacks/public/images/cicada21.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/cicada21.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 22:56:06 [error] 402#402: *28 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 22:56:06 [error] 402#402: *28 open() "/srv/http/hashhacks/public/images/cicada21.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/cicada21.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 22:56:06 [error] 402#402: *25 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 22:57:46 [error] 402#402: *30 open() "/srv/http/hashhacks/public/images/cicada21.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/cicada21.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 22:57:46 [error] 402#402: *33 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 22:59:47 [error] 402#402: *34 open() "/srv/http/hashhacks/public/images/cicada21.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/cicada21.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 22:59:47 [error] 402#402: *37 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 22:59:47 [error] 402#402: *37 open() "/srv/http/hashhacks/public/images/cicada21.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/cicada21.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 22:59:47 [error] 402#402: *36 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 23:01:03 [error] 402#402: *38 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 23:01:03 [error] 402#402: *40 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 23:01:36 [error] 402#402: *40 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 23:01:37 [error] 402#402: *38 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 23:01:55 [error] 402#402: *40 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 23:01:55 [error] 402#402: *40 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 23:04:36 [error] 402#402: *43 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 23:05:20 [error] 402#402: *43 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 23:06:55 [error] 402#402: *46 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 23:06:56 [error] 402#402: *46 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 23:07:02 [error] 402#402: *46 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 23:07:03 [error] 402#402: *50 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 23:07:08 [error] 402#402: *50 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 23:07:08 [error] 402#402: *50 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 23:07:14 [error] 402#402: *50 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 23:07:14 [error] 402#402: *46 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 23:10:25 [error] 402#402: *53 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 23:10:41 [error] 402#402: *53 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 23:10:42 [error] 402#402: *57 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 23:11:02 [error] 402#402: *53 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/22 23:14:03 [error] 402#402: *59 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/23 00:01:03 [error] 394#394: *1 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/23 00:01:03 [error] 394#394: *1 open() "/srv/http/hashhacks/public/event/images/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /event/images/favicon.ico HTTP/1.1", host: "hashhacks.dev"
+2017/09/23 00:01:04 [error] 394#394: *1 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/23 00:07:40 [error] 394#394: *5 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/23 00:07:40 [error] 394#394: *5 open() "/srv/http/hashhacks/public/images/controller.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/controller.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/1"
+2017/09/23 09:35:30 [error] 404#404: *1 open() "/srv/http/hashhacks/public/event/images/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /event/images/favicon.ico HTTP/1.1", host: "hashhacks.dev"
+2017/09/24 01:29:18 [error] 383#383: *1 open() "/srv/http/hashhacks/public/event/images/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /event/images/favicon.ico HTTP/1.1", host: "hashhacks.dev"
+2017/09/24 03:58:12 [error] 383#383: *3 open() "/srv/http/hashhacks/public/event/images/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /event/images/favicon.ico HTTP/1.1", host: "hashhacks.dev"
+2017/09/24 11:55:39 [error] 383#383: *104 open() "/srv/http/hashhacks/public/imagesr2d2.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /imagesr2d2.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/56083476"
+2017/09/24 11:55:40 [error] 383#383: *104 open() "/srv/http/hashhacks/public/imagesr2d2.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /imagesr2d2.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/56083476"
+2017/09/24 13:26:33 [error] 383#383: *182 open() "/srv/http/hashhacks/public/images/eb-tickets.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/eb-tickets.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/56083476"
+2017/09/24 13:26:33 [error] 383#383: *182 open() "/srv/http/hashhacks/public/images/eb-tickets.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/eb-tickets.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/56083476"
+2017/09/24 14:43:35 [error] 383#383: *335 open() "/srv/http/hashhacks/public/images/cnn.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/cnn.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/26834642"
+2017/09/24 14:43:35 [error] 383#383: *335 open() "/srv/http/hashhacks/public/images/cnn.png" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/cnn.png HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/26834642"
+2017/09/24 15:01:06 [error] 383#383: *376 open() "/srv/http/hashhacks/public/event/56083476/images/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /event/56083476/images/favicon.ico HTTP/1.1", host: "hashhacks.dev"
+2017/09/24 15:29:49 [error] 383#383: *386 open() "/srv/http/hashhacks/public/event/14956259/images/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /event/14956259/images/favicon.ico HTTP/1.1", host: "hashhacks.dev"
+2017/09/25 10:28:10 [error] 397#397: *1 open() "/srv/http/hashhacks/public/event/56083476/images/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /event/56083476/images/favicon.ico HTTP/1.1", host: "hashhacks.dev"
+2017/09/25 10:28:44 [error] 397#397: *5 open() "/srv/http/hashhacks/public/event/images/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /event/images/favicon.ico HTTP/1.1", host: "hashhacks.dev"
+2017/09/25 10:51:02 [error] 397#397: *9 open() "/srv/http/hashhacks/public/event/images/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /event/images/favicon.ico HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/56083476"
+2017/09/26 13:06:35 [error] 407#407: *8 open() "/srv/http/hashhacks/public/event/images/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /event/images/favicon.ico HTTP/1.1", host: "hashhacks.dev"
+2017/09/26 13:08:31 [error] 407#407: *21 open() "/srv/http/hashhacks/public/event/26834642/images/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /event/26834642/images/favicon.ico HTTP/1.1", host: "hashhacks.dev"
+2017/09/27 20:45:53 [error] 407#407: *34 open() "/srv/http/hashhacks/public/event/images/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /event/images/favicon.ico HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/56083476"
+2017/09/28 01:25:59 [error] 401#401: *1 open() "/srv/http/hashhacks/public/event/images/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /event/images/favicon.ico HTTP/1.1", host: "hashhacks.dev"
+2017/09/28 01:28:40 [error] 401#401: *11 open() "/srv/http/hashhacks/public/event/images/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /event/images/favicon.ico HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/56083476"
+2017/09/28 01:45:29 [error] 401#401: *59 open() "/srv/http/hashhacks/public/images/icon-calenders.jpg" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/icon-calenders.jpg HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/56083476"
+2017/09/28 01:45:30 [error] 401#401: *59 open() "/srv/http/hashhacks/public/images/icon-calenders.jpg" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/icon-calenders.jpg HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/56083476"
+2017/09/28 01:45:39 [error] 401#401: *59 open() "/srv/http/hashhacks/public/images/icon-calenders.jpg" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/icon-calenders.jpg HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/56083476"
+2017/09/28 01:45:58 [error] 401#401: *59 open() "/srv/http/hashhacks/public/images/icon-calenders.jpg" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /images/icon-calenders.jpg HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/56083476"
+2017/09/28 02:15:27 [error] 401#401: *125 open() "/srv/http/hashhacks/public/event/images/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /event/images/favicon.ico HTTP/1.1", host: "hashhacks.dev"
+2017/09/28 02:38:53 [error] 401#401: *168 open() "/srv/http/hashhacks/public/event/56083476/images/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /event/56083476/images/favicon.ico HTTP/1.1", host: "hashhacks.dev"
+2017/09/28 03:18:38 [error] 396#396: *1 open() "/srv/http/hashhacks/public/event/56083476/images/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /event/56083476/images/favicon.ico HTTP/1.1", host: "hashhacks.dev"
+2017/09/28 04:02:30 [error] 396#396: *58 open() "/srv/http/hashhacks/public/event/56083476/images/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: hashhacks.dev, request: "GET /event/56083476/images/favicon.ico HTTP/1.1", host: "hashhacks.dev", referrer: "http://hashhacks.dev/event/56083476/registration"
