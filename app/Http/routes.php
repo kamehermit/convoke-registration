@@ -17,5 +17,11 @@ Route::get('/', function () {
 Route::get('/event/{event_id}',['uses'=>'RegistrationController@event']);
 Route::get('/event/{event_id}/registration',['uses'=>'RegistrationController@registration']);
 Route::post('/payment',['as'=>'payment','uses'=>'PaymentController@payment']);
-Route::post('/fail',['as' => 'fail','uses' => 'PaymentController@fail']);
-Route::post('/success',['as' => 'success','uses' => 'PaymentController@success']);
+Route::get('/sendmail',['as'=>'sendmail','uses'=>'PaymentController@send_mail']);
+
+Route::group(['middleware' => ['api']],function(){
+	Route::post('/fail',['as' => 'fail','uses' => 'PaymentController@fail']);
+	Route::post('/success',['as' => 'success','uses' => 'PaymentController@success']);		
+});
+
+Route::get('/test',['as'=>'test','uses'=>'PaymentController@test']);

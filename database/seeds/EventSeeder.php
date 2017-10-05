@@ -50,6 +50,19 @@ class EventSeeder extends Seeder
              'room_no' => '124',
         	 'start_date_time'=>'2017-10-26 10:00:00',
         	 'end_date_time'=>'2017-10-26 17:00:00'
+            ],
+            ['id'=>12374587,
+             'name' => 'B-Plan',
+             'category_id'=>3,
+             'image' => 'cnn.png',
+             'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pellentesque commodo ante, et consequat tellus vestibulum vel. Nunc vel neque vel erat auctor sagittis. Curabitur tristique auctor leo, eu lobortis nisl porta non. Sed interdum varius nibh eleifend commodo. Praesent nulla eros, suscipit vitae varius nec, pulvinar ut eros. Nunc facilisis sodales mi eu fringilla. Pellentesque porta nisl sit amet urna facilisis, id ullamcorper felis sodales. Quisque volutpat venenatis dignissim. Sed ut varius justo. Vivamus ornare sit amet mi quis iaculis. Aliquam turpis quam, sagittis nec consectetur sed, finibus quis purus. Nam quis orci vel risus faucibus eleifend sit amet sed justo.',
+             'nm_tickets'=>60,
+             'nm_tickets_amt'=>0,
+             'eb_tickets'=>0,
+             'eb_tickets_amt'=>0,
+             'room_no' => 'Seminar Hall',
+             'start_date_time'=>'2017-10-26 10:00:00',
+             'end_date_time'=>'2017-10-26 17:00:00'
             ]
         );
         DB::table('events')->insert($data);

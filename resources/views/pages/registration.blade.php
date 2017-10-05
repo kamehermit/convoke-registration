@@ -40,11 +40,11 @@
 							<div class="col-md-3 col-md-push-9">
 								<div class="price-tag">
 									@if($event_data->eb_tickets!=0)
-										
-											<s>₹{{ $event_data->nm_tickets_amt }}</s>
-											<p>₹{{ $event_data->eb_tickets_amt }}</p>
-											<p style="font-size:18px;">Early Bird Discount!</p>
-										
+										<s>₹{{ $event_data->nm_tickets_amt }}</s>
+										<p>₹{{ $event_data->eb_tickets_amt }}</p>
+										<p style="font-size:18px;">Early Bird Discount!</p>
+									@elseif($event_data->nm_tickets_amt == 0.00)
+										<p>Free Registration!</p>
 									@else
 										<p>₹{{ $event_data->nm_tickets_amt }}</p>
 									@endif
@@ -54,17 +54,11 @@
 								<div class="form">
 									@if($errors)
 								@if(count($errors))
+									<ul style="font-size: 12px; color: red; display: inline-block;">
 									@foreach($errors->all() as $error)
-										<div class="alert alert-info alert-dismissible" role="alert">
-											<font style="font-size: 12px; padding: 0px; margin : 0px;">
-												{{ $error }}
-												</font>
-											<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-												
-											</button>
-										</div>
+										<li>{{ $error }}</li>												
 									@endforeach
+									</ul>
 								@endif
 							@endif
 								<div class="title">
@@ -72,11 +66,12 @@
 								</div>
 								<br>
 								{!! Form::open(array('route' => 'payment','method'=>'POST')) !!}
-									{!! Form::text('name', null, array('class' => 'form-control  email','placeholder'=>'Name','id'=>'name')) !!}
+									{!! Form::hidden('id',$event_data->id,array()) !!}
+									{!! Form::text('name', null, array('class' => 'form-control  name','placeholder'=>'Name','id'=>'name')) !!}
 									<br>
 									{!! Form::text('email', null, array('class' => 'form-control  email','placeholder'=>'Email','id'=>'email')) !!}
 									<br>
-									{!! Form::text('phone',null, array('class' => 'form-control','placeholder'=>'Phone','id'=>'phone')) !!}
+									{!! Form::text('phone',null, array('class' => 'form-control phone','placeholder'=>'Phone','id'=>'phone')) !!}
 									<br>
   									{!! Form::submit('&nbsp;&nbsp;Proceed to Pay&nbsp;&nbsp;', array('class' => 'btn btn-default register-btn','name'=>'register','id'=>'register')) !!}
 

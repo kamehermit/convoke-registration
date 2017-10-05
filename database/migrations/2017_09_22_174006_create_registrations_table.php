@@ -17,8 +17,10 @@ class CreateRegistrationsTable extends Migration
             $table->string('transaction_id')->unique();
             $table->integer('user_id')->unsigned();
             $table->integer('event_id')->unsigned();
+            $table->decimal('amount', 6, 2);
             $table->dateTime('date_time');
             $table->boolean('checkin')->default(false);
+            $table->boolean('verified')->default(false);
             $table->timestamps();
         });
         Schema::table('registrations', function($table){

@@ -12,7 +12,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'phone',
     ];
 
     /**
@@ -23,4 +23,16 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public static $register_validation_rules = [
+        'id' => 'required|exists:events',
+        'name' => 'required',
+        'email' => 'required|email|Unique:users',
+        'phone' => 'required|Unique:users',
+        'g-recaptcha-response' => 'required|captcha'
+    ];
+
+    function registration(){
+        return $this->hasMany(Registration::class);
+    }
 }

@@ -76,7 +76,7 @@
 								</div>
 								<div class="col-xs-11">
 									
-									{{ $event_data->start_date_time }} - {{ $event_data->end_date_time }}<br>
+									<b>Date : </b>{{ $event_data->start_date_time }} - {{ $event_data->end_date_time }}<br>
 									<b>Room : </b>{{ $event_data->room_no }}
 								
 								</div>
@@ -94,11 +94,11 @@
 				<div class="col-md-4 col-md-push-8">
 					<div class="price-tag">
 						@if($event_data->eb_tickets!=0)
-							
-								<s>₹{{ $event_data->nm_tickets_amt }}</s>
-								<p>₹{{ $event_data->eb_tickets_amt }}</p>
-								<p style="font-size:18px;">Early Bird Discount!</p>
-							
+							<s>₹{{ $event_data->nm_tickets_amt }}</s>
+							<p>₹{{ $event_data->eb_tickets_amt }}</p>
+							<p style="font-size:18px;">Early Bird Discount!</p>
+						@elseif($event_data->nm_tickets_amt == 0.00)
+							<p>Free Registration!</p>
 						@else
 							<p>₹{{ $event_data->nm_tickets_amt }}</p>
 						@endif
