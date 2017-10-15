@@ -88,6 +88,12 @@ body .row {
 	margin: 5px;
 	font-size: 15px;
 }
+.participants{
+	color: #244356;
+	padding: 5px;
+	margin: 5px;
+	font-size: 15px;
+}
 .description {
 	margin: 5px 15px 10px 15px;
 	padding: 5px 15px 10px 15px;

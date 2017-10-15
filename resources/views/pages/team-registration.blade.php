@@ -34,7 +34,7 @@
 				<div class="col-md-9">
 					<div class="registration">
 						<div class="title">
-							Register
+							Register as a Team
 						</div>
 						<div class="row">
 							<div class="col-md-3 col-md-push-9">
@@ -49,7 +49,7 @@
 								</div>
 								<div class="price-tag">
 									@if($event_data->eb_tickets!=0)
-										<s id="s-price">₹{{ $event_data->nm_tickets_amt }}</s>
+										<s>₹{{ $event_data->nm_tickets_amt }}</s>
 										<p id="price">₹{{ $event_data->eb_tickets_amt }}</p>
 										<p style="font-size:18px;">Early Bird Discount!</p>
 									@elseif($event_data->nm_tickets_amt == 0.00)
@@ -77,15 +77,18 @@
 								{!! Form::open(array('route' => 'payment','method'=>'POST')) !!}
 									{!! Form::hidden('id',$event_data->id,array()) !!}
 									{!! Form::hidden('food_coupon_id',0,array()) !!}
-									{!! Form::text('name', null, array('class' => 'form-control  name','placeholder'=>'Name','id'=>'name')) !!}
-									<br>
-									{!! Form::text('email', null, array('class' => 'form-control  email','placeholder'=>'Email','id'=>'email')) !!}
-									<br>
-									{!! Form::text('phone',null, array('class' => 'form-control phone','placeholder'=>'Phone','id'=>'phone')) !!}
-									<br>
-									{!! app('captcha')->render(); !!}
-  									{!! Form::submit('&nbsp;&nbsp;Proceed to Pay&nbsp;&nbsp;', array('class' => 'btn btn-default register-btn','name'=>'register','id'=>'register')) !!}
-
+									
+										{!! Form::text('team_name', null, array('class' => 'form-control  name','placeholder'=>'Team Name','id'=>'teamname')) !!}
+										<br>
+										{!! Form::text('name', null, array('class' => 'form-control  name','placeholder'=>'Your Name','id'=>'name')) !!}
+										<br>
+										{!! Form::text('email', null, array('class' => 'form-control  email','placeholder'=>'Your Email','id'=>'email')) !!}
+										<br>
+										{!! Form::text('phone',null, array('class' => 'form-control phone','placeholder'=>'Your Phone','id'=>'phone')) !!}
+										<br>
+										{!! app('captcha')->render(); !!}
+  										{!! Form::submit('&nbsp;&nbsp;Proceed to Pay&nbsp;&nbsp;', array('class' => 'btn btn-default register-btn','name'=>'register','id'=>'register')) !!}
+  									</div>
   									
   								{!! Form::close() !!}
 								</div>

@@ -31,7 +31,7 @@
 					 		{{ $event_data->name }}	
 					 	</div>
 					 	<div class="subtitle">
-					 		<b>{{ $event_data->category }}</b>	
+					 		<b>{{ $event_data->category->category }}</b>	
 					 	</div>
 					</div>
 					<div class="tickets">
@@ -82,6 +82,21 @@
 								</div>
 							</div>
 						</div>
+						<div class="participants">
+							<div class="row">
+								<div class="col-xs-1">
+									<img src="{{ URL::asset('/images/hum.png') }}" class="img-responsive">
+								</div>
+								<div class="col-xs-11">
+									<b>Participant(s) : </b>
+									@if($event_data->participants == 1)
+										Individual
+									@else
+										Only {{ $event_data->participants }} humans in a team 
+									@endif
+								</div>
+							</div>	
+						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -104,7 +119,14 @@
 						@endif
 					</div>
 					<div class="register-btn-container" align="center">
-						<a href="{{ url('/event').'/'.$event_data->id.'/registration' }}" class="btn btn-primary btn-lg register-btn" style="min-width: 200px;">REGISTER</a>
+						@if($event_data->participants == 1)
+							<a href="{{ url('/event').'/'.$event_data->id.'/registration' }}" class="btn btn-primary btn-lg register-btn" style="min-width: 200px;">REGISTER</a><br>
+							
+						@else
+							<a href="{{ url('/event').'/'.$event_data->id.'/registration' }}" class="btn btn-primary btn-lg register-btn" style="min-width: 200px;">REGISTER TEAM</a><br>
+							
+						@endif
+						
 					</div>
 				</div>
 				<div class="col-md-8 col-md-pull-4">
@@ -114,6 +136,15 @@
 						</div>
 						<div class="content">
 							{!! $event_data->description !!}
+						</div>
+						<br>
+						<div class="title">
+							Contact:
+						</div>
+						<div class="content">
+							@foreach($event_data->members as $member)
+								{{ $member->name }} : {{ $member->contact }}<br>
+							@endforeach
 						</div>	
 					</div>
 				</div>

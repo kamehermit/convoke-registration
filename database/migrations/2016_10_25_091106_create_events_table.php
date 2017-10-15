@@ -25,6 +25,7 @@ class CreateEventsTable extends Migration
             $table->dateTime('start_date_time');
             $table->dateTime('end_date_time');
             $table->string('room_no');
+            $table->integer('participants')->unsigned();
             $table->timestamps();
         });
         Schema::table('events', function($table){

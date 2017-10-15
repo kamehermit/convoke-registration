@@ -20,6 +20,9 @@ class CategorySeeder extends Seeder
         	],
             ['id'=>3,
              'category' => 'Talk'
+            ],
+            ['id'=>4,
+             'category' => 'Hackathon'
             ]
         );
         DB::table('categories')->insert($data);

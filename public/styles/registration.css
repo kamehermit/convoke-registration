@@ -54,6 +54,7 @@ body .row {
 }
 .registration{
 	padding-bottom: 25px;
+	overflow-y: hidden;
 }
 .registration .title{
 	margin: 10px;
@@ -78,6 +79,7 @@ body .row {
 .form{
 	margin: 10px;
 	padding: 10px;
+	
 
 }
 .register-btn{
@@ -100,4 +102,25 @@ body .row {
 }
 .form-control {
 	border-radius: 0px;
+}
+.food-coupon{
+	padding: 5px;
+	margin: 5px; 
+}
+.coupon-btn{
+
+}
+.coupon-img-bw{
+	filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1);
+}
+#coupon-img{
+	width: 65%;
+}
+.add-food{
+	border-radius: 0px;
+	border: 5px solid #244356;
+	background-color: #244356;
+	color:#fff; 
 }
