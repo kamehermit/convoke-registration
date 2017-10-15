@@ -59,6 +59,8 @@
 									<br>
 									<div class="coupon-btn" align="center">
 										<button class="btn btn-default register-btn" id="add-food">Add Food Coupon</button>
+										<br>
+										<p>This food coupon is only applicable for a single user for a single meal</p>
 									</div>
 								</div>
 								<div class="price-tag">

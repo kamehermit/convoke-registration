@@ -60,4 +60,11 @@ class User extends Authenticatable
         return $this->belongsToMany(Team::class,'team_members','user_id','team_id');
     }
 
+    public function rules(\Illuminate\Http\Request $request){
+        return [
+            'tag_title' => 'required|unique:tags,tag_title,'.$request->route()->parameter('id'),
+             'tag_slug' => 'required|unique:tags,tag_slug,'.$request->route()->parameter('id'),
+            ];
+    }
+
 }

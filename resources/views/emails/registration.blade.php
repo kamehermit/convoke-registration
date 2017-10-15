@@ -5,10 +5,10 @@
 </head>
 <body>
 Hello {{ $registration->user->name }}!<br>
-<p>We have received your payment for the following event at Convoke2.0:</p>
-<p>Transaction ID: {{$registration->transaction_id}}</p>
-<p>Event Name: {{$registration->event->name}}</p>
-<p>Amount: {{ $registration->amount }}</p>
+<p>We have received your payment for the following event at Convoke2.0:<br>
+Transaction ID: {{$registration->transaction_id}}<br>
+Event Name: {{$registration->event->name}}<br>
+Amount: {{ $registration->amount }}</p>
 <br>
 <p><b>IT IS MANDATORY FOR YOU TO BRING YOUR PASS TO THE EVENT.</b></p>
 <p>You won't be allowed in without it. Both softcopy and hardcopy would do.</p>

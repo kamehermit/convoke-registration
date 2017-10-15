@@ -31,13 +31,8 @@ class PaymentController extends Controller
 		$data = $request->all();
 		$this->event = Event::find($data['id']);
 		if($u_id = User::where('email',$data['email'])->get()->first()){
-			$this->parameters['udf4'] = 1;
-			$check = User::find($u_id->id)->registration;
-			foreach($check as $key) {
-				if($key->event_id == $data['id'])
-					return redirect('/event/'.$data['id'])->withErrors('You have already registered to this event!')->withInput();
-			}
-		}
+            $this->parameters['udf4'] = $u_id->id;
+        }
 		if(isset($data['code'])){
 			$this->validate($request, User::$member_register_validation_rules);
 			$this->parameters['udf3'] = $data['code'];
@@ -100,18 +95,26 @@ class PaymentController extends Controller
 
     public function register(){
     	$cur_date = Carbon::now('Asia/Kolkata');
-    	$user = new User;
-    	$user->name = $this->parameters['firstname'];
-    	$user->email = $this->parameters['email'];
-    	$user->phone = $this->parameters['phone'];
-    	$user->save();
-    	
+    	$user_id = 0;
+    	if(isset($this->parameters['udf4'])){
+    		$user_id = $this->parameters['udf4'];
+    	}
+    	else{
+    		$user = new User;
+    		$user->name = $this->parameters['firstname'];
+    		$user->email = $this->parameters['email'];
+    		$user->phone = $this->parameters['phone'];
+    		$user->save();
+
+    		$user_id = $user->id;	
+    	}
+
     	$register = new Registration;
     	$register->transaction_id = $this->parameters['txnid'];
     	$register->event_id = $this->parameters['productinfo'];
     	$register->amount = $this->parameters['amount'];
     	$register->date_time = $cur_date;
-   		$register->user_id = $user->id;
+   		$register->user_id = $user_id;
     	$register->save();
     	
     	
@@ -140,7 +143,7 @@ class PaymentController extends Controller
         	$team->code = substr(hash('sha256',$this->parameters['udf2']), 0, 20);
         	$team->save();
     		//}
-        	$team->user()->attach($user->id);
+        	$team->user()->attach($user_id);
         	$register->team()->attach($team->id);
     	}
 
@@ -148,7 +151,7 @@ class PaymentController extends Controller
     		$team_id = Team::where('code',$this->parameters['udf3'])->get(['id'])->first();
     		$team = Team::find($team_id->id);
     		//$team = new Team;
-    		$user->team()->attach($team->id);
+    		$team->user()->attach($user_id);
     		$register->team()->attach($team->id);
     	}
     	//return 0;

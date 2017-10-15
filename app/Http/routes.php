@@ -16,7 +16,9 @@ Route::get('/', function () {
 });
 Route::get('/event/{event_id}',['uses'=>'RegistrationController@event']);
 Route::get('/event/{event_id}/registration',['uses'=>'RegistrationController@registration']);
-Route::post('/payment',['as'=>'payment','uses'=>'PaymentController@payment']);
+Route::group(['middleware' => ['manageRegistration']],function(){
+	Route::post('/payment',['as'=>'payment','uses'=>'PaymentController@payment']);	
+});
 Route::get('/{transaction_id}/download',['uses'=>'TicketController@download']);
 Route::get('/event/{event_id}/registration/team/{team_code}',['uses'=>'RegistrationController@team_registration']);
 

@@ -15,7 +15,7 @@ class TicketController extends Controller
     public function success(Request $request){
     	$data = $request->all();
     	$txnid = $data['txnid'];
-    	$user = Registration::where('transaction_id',$data['txnid'])->join('users','users.id','=','registrations.user_id')->get(['users.id','users.email','users.name'])->first();
+    	$user = Registration::where('transaction_id',$data['txnid'])->join('users','users.id','=','registrations.user_id')->get(['users.id','users.email','users.name','users.phone'])->first();
     	$this->send_mail($data['firstname'],$data['email'],$data['txnid']);
     	Registration::where('transaction_id',$data['txnid'])->update(['verified'=>1]);
     	$event = Event::find($data['productinfo']);
@@ -25,7 +25,7 @@ class TicketController extends Controller
     	else{
     		Event::where('id',$data['productinfo'])->update(['nm_tickets'=>$event->nm_tickets-1]);	
     	}
-    	return view('pages.success',['event'=>$event,'txnid'=>$txnid]);
+    	return view('pages.success',['event'=>$event,'txnid'=>$txnid,'user'=>$user,'team_name'=>$data['udf2']]);
     }
 
     public function fail(Request $request){

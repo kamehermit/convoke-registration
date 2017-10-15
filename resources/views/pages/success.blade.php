@@ -65,7 +65,11 @@
 										</div>
 										<div class="row">
 											<div class="col-md-6">
-												<b>Transaction ID : </b>{{ $txnid }}
+												<b>Transaction ID : </b>{{ $txnid }}<br>
+												<b>Name : </b>{{ $user->name }}<br>
+												<b>Email : </b>{{ $user->email }}<br>
+												<b>Phone : </b>{{ $user->phone }}<br>
+												<b>Team : </b>{{ $team_name }}
 											</div>
 											<div class="col-md-6">
 												<b>Venue :</b> 
@@ -122,12 +126,34 @@
 	<div class="card2">
 		<div class="row">
 			<div class="col-md-9">
-				<Br><Br><Br><br>
+				<div class="title" style="margin:10px;padding: 10px">
+					<h2>Team : {{ $team_name }}</h2>	
+				</div>
+				
 			</div>
 			<div class="col-md-3">
-				<Br><Br><Br><br>
+				
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-9">
+				<div class="content" style="margin:10px;padding: 10px">
+					<h4>Invite Members :</h4>
+					@for($i=0;$i<$event->participants;$i++)
+						<input type="text" name="member[{{$i}}]" placeholder="Email (Member {{ $i }})" class="form-control"><br>
+					@endfor
+					<button class="btn register-btn" id="invite">INVITE</button>
+
+				</div>
+			</div>
+			<div class="col-md-3">
+			<div style="margin:10px;padding: 10px">
+				<h4>Or share this link with your team members: </h4>
+				<a href="{{ url('/event/'.$event->id.'/registration/team/'.substr(hash('sha256', $team_name), 0, 20)) }}">{{ url('/event/'.$event->id.'/registration/team/'.substr(hash('sha256', $team_name), 0, 20)) }}</a>
+			</div>
+			</div>
+		</div>
+		<br><Br>
 	</div>
 @endif
 
