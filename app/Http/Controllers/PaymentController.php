@@ -70,7 +70,7 @@ class PaymentController extends Controller
     			'form_params' => $this->parameters
 			]);
     	}
-     	$this->parameters['amount'] = 1.00; //capped transaction amount for testing
+     	//$this->parameters['amount'] = 1.00; //capped transaction amount for testing
      	
       	$order = Indipay::prepare($this->parameters);
       	return Indipay::process($order);
