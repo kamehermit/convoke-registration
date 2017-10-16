@@ -6,3 +6,5 @@ Homestead.json
 .env
 .composer.lock
 .composer.json
+access.log
+error.log

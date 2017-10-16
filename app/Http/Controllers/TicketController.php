@@ -9,6 +9,7 @@ use App\Event;
 use App\FoodRegistration;
 use App\Http\Requests;
 use App\User;
+use App\RegistrationTeam;
 
 class TicketController extends Controller
 {
@@ -34,8 +35,12 @@ class TicketController extends Controller
     	if($check){
     		if(!empty(Registration::find($check->id)->food_item))
     			$delete = FoodRegistration::where('registration_id',$check->id)->delete();
-            if(!empty(Registration::find($check->id)->team))
-                $delete = RegistrationTeam::where('registration_id',$check->id)->delete();
+            if(!empty($a=Registration::find($check->id)->team)){
+                //Registration::find($check->id)->team()->detach
+                $register = Registration::find($check->id);
+                $register->team()->detach($a[0]->id);
+            }
+            //$delete = RegistrationTeam::where('registration_id',$check->id)->delete();
     		$delete = Registration::where('transaction_id',$data['txnid'])->delete();
     		$user = User::where('id',$check->user_id)->delete();
     	}
@@ -66,14 +71,15 @@ class TicketController extends Controller
 
     public function test(){
         $event = Event::find(6);
-        $txnid = '99c4f767986061a138de';
+        $txnid = 'a97395939fc01042e04e';
         $user = Registration::where('transaction_id',$txnid)->join('users','users.id','=','registrations.user_id')->get(['users.id','users.email','users.name'])->first();
         $this->send_mail($user->name,$user->email,$txnid);
-        return view('pages.success',['event'=>$event,'txnid'=>$txnid]);
+        $team_name = 'ANimesh';
+        return view('pages.success',['event'=>$event,'txnid'=>$txnid,'user'=>$user,'team_name'=>$team_name]);
     }
 
     public function test2(){
-        $register = Registration::where('transaction_id','d9ecc400333baa7722ae')->get()->first();
+        $register = Registration::where('transaction_id','a97395939fc01042e04e')->get()->first();
         $registration = Registration::find($register->id);
         $event = Event::find($registration->event_id);
         $user = User::find($register->user_id);
