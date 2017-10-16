@@ -34,7 +34,8 @@ class TicketController extends Controller
     	if($check){
     		if(!empty(Registration::find($check->id)->food_item))
     			$delete = FoodRegistration::where('registration_id',$check->id)->delete();
-
+            if(!empty(Registration::find($check->id)->team))
+                $delete = RegistrationTeam::where('registration_id',$check->id)->delete();
     		$delete = Registration::where('transaction_id',$data['txnid'])->delete();
     		$user = User::where('id',$check->user_id)->delete();
     	}
