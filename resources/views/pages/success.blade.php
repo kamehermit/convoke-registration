@@ -104,7 +104,7 @@
 										</div>
 										<div class="row">
 											<div class="col-md-12">
-												<a class="btn register-btn" href="{{ url('/'.$txnid.'/doanload') }}" target="_blank">Download</a>
+												<a class="btn register-btn" href="{{ url('/'.$txnid.'/download') }}" target="_blank">Download</a>
 											</div>
 										</div>
 									</div>									
