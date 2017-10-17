@@ -68,10 +68,6 @@ class EventInchargeSeeder extends Seeder
         	 'event_id'=>10,
         	 'member_id'=>10
         	],
-        	['id'=>15,
-        	 'event_id'=>11,
-        	 'member_id'=>11
-        	],
         	['id'=>16,
         	 'event_id'=>12,
         	 'member_id'=>7
