@@ -52,13 +52,14 @@
 								<div class="price-tag">
 									@if($event_data->eb_tickets!=0)
 										<s>₹{{ $event_data->nm_tickets_amt }}</s>
-										<p id="price">₹{{ $event_data->eb_tickets_amt }}</p>
+										<p id="price">₹{{ $event_data->eb_tickets_amt }}*</p>
 										<p style="font-size:18px;">Early Bird Discount!</p>
 									@elseif($event_data->nm_tickets_amt == 0.00)
-										<p id="price">₹{{ $event_data->nm_tickets_amt }}</p>
+										<p id="price">₹{{ $event_data->nm_tickets_amt }}*</p>
 									@else
-										<p id="price">₹{{ $event_data->nm_tickets_amt }}</p>
+										<p id="price">₹{{ $event_data->nm_tickets_amt }}*</p>
 									@endif
+										<p style="font-size:12px;padding:0px 10px 0px 10px;"> * excluding processing and internet handling fee</p>
 								</div>
 							</div>
 							<div class="col-md-9 col-md-pull-3">

@@ -49,7 +49,7 @@ For more info, please visit <a href="https://goo.gl/irauCn">here</a>.
         	 'end_date_time'=>'2017-10-27 17:00:00'
         	],
         	['id'=>2,
-        	 'name' => 'Ethical Hacking',
+        	 'name' => 'LoopHole : Ethical Hacking',
         	 'category_id'=>1,
         	 'image' => 'cnn.png',
         	 'description'=>'<p>Loophole, Ethical Hacking and Penetration Testing workshop, aims to educate users of digital media of the threats, risks and privacy concerns that go with using them. The other goal of this training module is to expose issues and vulnerabilities to drive the digital media industry to create solutions to these problems. </p>
@@ -84,7 +84,7 @@ For more info, please visit <a href="https://goo.gl/Rcs8sY">here</a>.
         	 'end_date_time'=>'2017-10-27 17:30:00'
         	],
             ['id'=>3,
-             'name' => 'Android App Development',
+             'name' => 'MyDroid : Android Workshop',
              'category_id'=>1,
              'image' => 'android.png',
              'description'=>'<p>Own an Android smartphone? Ever wondered how such immersive apps are built in Android? Want to make one of your own? Come and join this amazing workshop which will help you through the process of Android app development and by the time we are finished, you will have learned enough to go on to build your very own awesome apps!</p>
@@ -132,7 +132,7 @@ For more info, please visit <a href="https://goo.gl/HuFNFi">here</a>.',
              'end_date_time'=>'2017-10-28 16:00:00'
             ],
             ['id'=>5,
-             'name' => 'RoboRace',
+             'name' => 'Robo Race',
              'category_id'=>2,
              'image' => 'r2d2.png',
              'description'=>'<p>Design a robot either wired or wireless within the specified dimensions that can be operated manually/autonomously and can move through the specified track (having 7 obstacles). The robot that will complete the most tasks in least time will be the winner.</p>
@@ -302,7 +302,7 @@ For more info, please visit <a href="https://goo.gl/HuFNFi">here</a>.',
              'end_date_time'=>'2017-10-28 18:00:00'
             ],
             ['id'=>7,
-             'name' => 'RoboSoccer',
+             'name' => 'Robo Soccer',
              'category_id'=>2,
              'image' => 'r2d2.png',
              'description'=>'<p>Participants brings a remote controlled robot (wired or wireless) and compete against each other in a soccer tournament.</p>

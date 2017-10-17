@@ -84,9 +84,11 @@ class PaymentController extends Controller
       	$price = 0.00;
     	if($this->event->eb_tickets){
     		$price = $this->event->eb_tickets_amt;
+            $price += ($price*3)/100;
         }
         else{
     	   $price = $this->event->nm_tickets_amt;
+           $price += ($price*3)/100;
         }
 
     	if(isset($this->parameters['udf1'])){
