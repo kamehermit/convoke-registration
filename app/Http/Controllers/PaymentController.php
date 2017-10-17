@@ -82,9 +82,12 @@ class PaymentController extends Controller
 
     public function get_price(){
       	$price = 0.00;
-    	if($this->event->eb_tickets)
+    	if($this->event->eb_tickets){
     		$price = $this->event->eb_tickets_amt;
-    	$price = $this->event->nm_tickets_amt;
+        }
+        else{
+    	   $price = $this->event->nm_tickets_amt;
+        }
 
     	if(isset($this->parameters['udf1'])){
     		$food = FoodCoupon::find($this->parameters['udf1']);

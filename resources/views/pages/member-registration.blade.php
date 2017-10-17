@@ -15,7 +15,7 @@
 				<div class="col-xs-1"></div>
 				<div class="col-xs-10">
 					<div class="logo" align="center">
-						<a href="#"><img src="{{ URL::asset('images/logo-alt-1x.png') }}" class="img-responsive"></a>
+						<a href="http://convoke.tech"><img src="{{ URL::asset('images/logo-alt-1x.png') }}" class="img-responsive"></a>
 					</div>
 				</div>
 				<div class="col-xs-1"></div>
@@ -96,11 +96,11 @@
 									{!! Form::hidden('code',$team->code,array()) !!}
 									
 										
-										{!! Form::text('name', null, array('class' => 'form-control  name','placeholder'=>'Your Name','id'=>'name')) !!}
+										{!! Form::text('name', null, array('class' => 'form-control  name','placeholder'=>'Name','id'=>'name')) !!}
 										<br>
-										{!! Form::text('email', null, array('class' => 'form-control  email','placeholder'=>'Your Email','id'=>'email')) !!}
+										{!! Form::text('email', null, array('class' => 'form-control  email','placeholder'=>'Email','id'=>'email')) !!}
 										<br>
-										{!! Form::text('phone',null, array('class' => 'form-control phone','placeholder'=>'Your Phone','id'=>'phone')) !!}
+										{!! Form::text('phone',null, array('class' => 'form-control phone','placeholder'=>'Phone','id'=>'phone')) !!}
 										<br>
 										{!! app('captcha')->render(); !!}
   										{!! Form::submit('&nbsp;&nbsp;Proceed to Pay&nbsp;&nbsp;', array('class' => 'btn btn-default register-btn','name'=>'register','id'=>'register')) !!}

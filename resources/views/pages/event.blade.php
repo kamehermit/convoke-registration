@@ -14,7 +14,7 @@
 				<div class="col-xs-1"></div>
 				<div class="col-xs-10">
 					<div class="logo" align="center">
-						<a href="#"><img src="{{ URL::asset('images/logo-alt-1x.png') }}" class="img-responsive"></a>
+						<a href="http://convoke.tech"><img src="{{ URL::asset('images/logo-alt-1x.png') }}" class="img-responsive"></a>
 					</div>
 				</div>
 				<div class="col-xs-1"></div>

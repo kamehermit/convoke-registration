@@ -15,7 +15,7 @@
 				<div class="col-xs-1"></div>
 				<div class="col-xs-10">
 					<div class="logo" align="center">
-						<a href="#"><img src="{{ URL::asset('images/logo-alt-1x.png') }}" class="img-responsive"></a>
+						<a href="http://convoke.tech"><img src="{{ URL::asset('images/logo-alt-1x.png') }}" class="img-responsive"></a>
 					</div>
 				</div>
 				<div class="col-xs-1"></div>
@@ -147,7 +147,7 @@
 				</div>
 			</div>
 			<div class="col-md-3">
-			<div style="margin:10px;padding: 10px">
+			<div class="content" style="margin:10px;padding: 10px">
 				<h4>Or share this link with your team members: </h4>
 				<a href="{{ url('/event/'.$event->id.'/registration/team/'.substr(hash('sha256', $team_name), 0, 20)) }}">{{ url('/event/'.$event->id.'/registration/team/'.substr(hash('sha256', $team_name), 0, 20)) }}</a>
 			</div>
