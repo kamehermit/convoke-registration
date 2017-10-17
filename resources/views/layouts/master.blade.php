@@ -8,5 +8,6 @@
 	
 	@yield('content')
 	@yield('script')
+	@include('includes.sponsor')
 </body>
 </html>

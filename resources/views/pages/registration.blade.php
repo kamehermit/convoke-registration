@@ -46,7 +46,7 @@
 									<div class="coupon-btn" align="center">
 										<button class="btn btn-default register-btn" id="add-food">Add Food Coupon</button>
 										<br>
-										<p>This food coupon is only applicable for a single user for a single meal</p>
+										<p>This food coupon is only applicable for a single user for a single meal(lunch)</p>
 									</div>
 								</div>
 								<div class="price-tag">
@@ -101,7 +101,7 @@
 			
 		
 	</div>
-
+<!--
 	<div class="sponsor">
 		<div class="container-fluid">
 			<div class="row">
@@ -111,7 +111,7 @@
 			</div>
 		</div>
 	</div>
-	
+-->	
 	
 @endsection
 

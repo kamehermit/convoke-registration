@@ -56,7 +56,7 @@ body .row {
 @media (min-width: 991px) {
     .canvass {
     	width: 100%;
- 		height: 650px;      
+ 		height: 750px;      
     }
 }
 .registration{
@@ -68,13 +68,7 @@ body .row {
 	font-size: 32px;
 }
 .sponsor{
-	margin-top: 4vh; 
-	background: #EDEDED;
-	height: 100px;
-	margin-left: 5vw;
-	margin-right: 5vw;
-	margin-bottom: 2vw;
-	color: #333;
+
 }
 .price-tag{
 	padding: auto;

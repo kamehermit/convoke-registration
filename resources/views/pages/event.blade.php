@@ -152,7 +152,7 @@
 			
 		</div>
 	</div>
-
+<!--
 	<div class="sponsor">
 		<div class="container-fluid">
 			<div class="row">
@@ -162,7 +162,7 @@
 			</div>
 		</div>
 	</div>
-	
+-->
 	
 @endsection
 
