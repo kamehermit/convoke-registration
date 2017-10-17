@@ -75,7 +75,11 @@ class EventInchargeSeeder extends Seeder
         	['id'=>16,
         	 'event_id'=>12,
         	 'member_id'=>7
-        	]
+        	],
+            ['id'=>17,
+             'event_id'=>10,
+             'member_id'=>13
+            ]
         );
         DB::table('event_incharges')->insert($data);
     }

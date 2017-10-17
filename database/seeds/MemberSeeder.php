@@ -59,6 +59,10 @@ class MemberSeeder extends Seeder
             ['id'=>12,
              'name'=>'Lakshay',
              'contact'=>'+919811717305'
+            ],
+            ['id'=>13,
+             'name'=>'Aditya Gaur',
+             'contact'=>'+919582961942'
             ]
         );
         DB::table('members')->insert($data);
