@@ -33,7 +33,7 @@ class ManageRegistration
             $participants = Event::find($data['id']);
             $team_id = Team::where('code',$data['code'])->get(['id'])->first();
             $members = Team::find($team_id->id)->user;
-            if($participants->participants >= $members->count()){
+            if($members->count() >= $participants->participants){
                 return redirect()->back()->withErrors('Maximum number of members reached!')->withInput();
             }
         }
