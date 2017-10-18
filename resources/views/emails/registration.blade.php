@@ -17,13 +17,17 @@ Amount: {{ $registration->amount }}</p>
 <br>
 <p>Team Name:
 @foreach($registration->team as $team)
-	{{ $team->team_name }}	
+	@if(!empty($team))
+		{{ $team->team_name }}	
+	@endif
 @endforeach 
 
 </p>
 <p>Make sure all your team-mates have registered for the event. Send this link to all your team-mates for team registrations: 
 @foreach($registration->team as $team)
-{{ url('/event/'.$registration->event_id.'/registration/team/'.$team->code) }}
+	@if(!empty($team))
+		{{ url('/event/'.$registration->event_id.'/registration/team/'.$team->code) }}
+	@endif
 @endforeach
 </p>
 @endif
