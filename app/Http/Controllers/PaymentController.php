@@ -36,6 +36,8 @@ class PaymentController extends Controller
 		if(isset($data['code'])){
 			$this->validate($request, User::$member_register_validation_rules);
 			$this->parameters['udf3'] = $data['code'];
+            if($data['food_coupon_id'])
+                $this->parameters['udf1'] = $data['food_coupon_id'];
 		}
 		else{
 			if($this->event->participants > 1){

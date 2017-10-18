@@ -10,6 +10,8 @@ use App\FoodRegistration;
 use App\Http\Requests;
 use App\User;
 use App\RegistrationTeam;
+use App\Team;
+use App\TeamMember;
 
 class TicketController extends Controller
 {
@@ -37,9 +39,15 @@ class TicketController extends Controller
     			$delete = FoodRegistration::where('registration_id',$check->id)->delete();
             if(!empty($data['udf2'])){
                 //Registration::find($check->id)->team()->detach
-                $a = Registration::where('team_name',$data['udf2'])->get()->first();
-                $register = Registration::find($a->registration_id);
-                $register->team()->detach($a->registration_id);
+                $a = Team::where('team_name',$data['udf2'])->get()->first();
+                //$b = Team::find($a->id)->register;
+                $delete_rteam = RegistrationTeam::where('registration_id',$check->id)->delete();
+                $delete_mteam = TeamMember::where('user_id',$check->user_id)->delete();
+                $c = Team::find($a->id)->user->count();
+                if($c <= 0){
+                    $delete = Team::where('team_name',$data['udf2'])->delete();
+                }
+                //$register->team()->detach($a->registration_id);
             }
             //$delete = RegistrationTeam::where('registration_id',$check->id)->delete();
     		$delete = Registration::where('transaction_id',$data['txnid'])->delete();
