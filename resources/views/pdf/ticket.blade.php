@@ -54,12 +54,16 @@
 					<p>Date & Time :  <b>{{ $event->start_date_time }}</b></p>
 					
 					<hr>
-					@if(!empty($registration->team))
-						
-						Team:
-						<p><b>{{ $registration->team[0]->team_name }}</b></p>
-						<hr>
-					@endif
+					@foreach($registration->team as $team)
+
+					
+						@if(!empty($team))
+							Team:
+							<p><b>{{ $team->team_name }}</b></p>
+							<hr>
+						@endif
+					
+					@endforeach
 					@if(!empty($registration->food_item))
 						Food:
 						@foreach($registration->food_item as $ytr)
