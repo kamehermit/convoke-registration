@@ -65,10 +65,13 @@ class PaymentController extends Controller
     	$this->register();
 
     	if($this->parameters['amount'] <= 0.00){
-     		$client = new Client();
-			return $client->post(env('INDIPAY_SUCCESS_URL', '/success'), [
-    			'form_params' => $this->parameters
-			]);
+     		//$client = new Client();
+			//return $client->post(env('INDIPAY_SUCCESS_URL', '/success'), [
+    		//	'form_params' => $this->parameters
+			//]);
+            $endPoint = env('INDIPAY_SUCCESS_URL', '/success');
+            return \View::make('payment.payment')->with('parameters',$this->parameters)
+                             ->with('endPoint',$endPoint);
     	}
      	//$this->parameters['amount'] = 1.00; //capped transaction amount for testing
      	
