@@ -97,6 +97,7 @@ class PaymentController extends Controller
     	if(isset($this->parameters['udf1'])){
     		$food = FoodCoupon::find($this->parameters['udf1']);
     		$price = $price + $food->amount;
+            $price += ($price*3.10)/100;
      	}
       	return $price;
     }
