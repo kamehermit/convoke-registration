@@ -37,17 +37,23 @@ class TicketController extends Controller
     	if($check){
     		if(!empty(Registration::find($check->id)->food_item))
     			$delete = FoodRegistration::where('registration_id',$check->id)->delete();
-            if(!empty($data['udf2'])){
+            if(!empty($data['udf3'])){
                 //Registration::find($check->id)->team()->detach
-                $a = Team::where('team_name',$data['udf2'])->get()->first();
+                $a = Team::where('code',$data['udf3'])->get()->first();
                 //$b = Team::find($a->id)->register;
                 $delete_rteam = RegistrationTeam::where('registration_id',$check->id)->delete();
                 $delete_mteam = TeamMember::where('user_id',$check->user_id)->delete();
-                $c = Team::find($a->id)->user->count();
-                if($c <= 0){
-                    $delete = Team::where('team_name',$data['udf2'])->delete();
-                }
+                //$c = Team::find($a->id)->user->count();
+                //if($c <= 0){
+                //    $delete = Team::where('team_name',$data['udf2'])->delete();
+                //}
                 //$register->team()->detach($a->registration_id);
+            }
+            if(!empty($data['udf2'])){
+                $a = Team::where('team_name',$data['udf2'])->get()->first();
+                $delete_rteam = RegistrationTeam::where('registration_id',$check->id)->delete();
+                $delete_mteam = TeamMember::where('user_id',$check->user_id)->delete();
+                $delete = Team::where('team_name',$data['udf2'])->delete();
             }
             //$delete = RegistrationTeam::where('registration_id',$check->id)->delete();
     		$delete = Registration::where('transaction_id',$data['txnid'])->delete();
