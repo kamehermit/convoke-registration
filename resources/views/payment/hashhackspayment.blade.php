@@ -4,7 +4,6 @@
 </head>
 <body>
     <form method="post" name="redirect" action="{{ $endPoint }}">
-        <input type=hidden name="key" value="{{ $parameters['key'] or '' }}">
         <input type=hidden name="txnid" value="{{ $parameters['txnid'] }}">
         <input type=hidden name="amount" value="{{ $parameters['amount'] }}">
         <input type=hidden name="firstname" value="{{ $parameters['firstname'] }}">
@@ -29,6 +28,8 @@
         <input type=hidden name="udf4" value="{{ $parameters['udf4'] or '' }}">
         <input type=hidden name="udf5" value="{{ $parameters['udf5'] or '' }}">
         <input type=hidden name="udf10" value="{{ $parameters['udf10'] or '' }}">
+        <input type=hidden name="success" value="{{ $parameters['success'] or '' }}">
+        <input type=hidden name="download_link" value="{{ $parameters['download_link'] or '' }}">
         <input type=hidden name="pg" value="{{ $parameters['pg'] or '' }}">
     </form>
 <script language='javascript'>document.redirect.submit();</script>

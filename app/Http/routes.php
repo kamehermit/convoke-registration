@@ -24,7 +24,9 @@ Route::get('/event/{event_id}/registration/team/{team_code}',['uses'=>'Registrat
 
 Route::group(['middleware' => ['api']],function(){
 	Route::post('/fail',['as' => 'fail','uses' => 'TicketController@fail']);
-	Route::post('/success',['as' => 'success','uses' => 'TicketController@success']);		
+	Route::post('/success',['as' => 'success','uses' => 'TicketController@success']);
+	Route::post('/hashhacks/payment',['as'=>'hashhackspayment','uses'=>'HashhacksPaymentController@payment']);
+	Route::post('/hashhacks/test',['as'=>'hashhackstest','uses'=>'TicketController@hashhackstest']);		
 });
 
 
@@ -33,4 +35,7 @@ Route::group(['middleware' => ['api']],function(){
 Route::get('/test',['as'=>'test','uses'=>'TicketController@test']);
 Route::get('/sendmail',['as'=>'sendmail','uses'=>'TicketController@send_mail']);
 Route::get('/test2',['as'=>'test2','uses'=>'TicketController@test2']);
+Route::get('/forum',function (){
+	return view('payment.forum');
+});
 //Route::get('/test',['as'=>'test','uses'=>'PaymentController@test']);

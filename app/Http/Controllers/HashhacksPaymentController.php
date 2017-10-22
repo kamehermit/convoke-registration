@@ -3,36 +3,29 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Mail;
+
+use App\Http\Requests;
 use App\User;
 use App\Event;
-use App\Http\Requests;
 use Softon\Indipay\Facades\Indipay;  
 use Carbon\Carbon;
 use App\Registration;
-use GuzzleHttp\Exception\GuzzleException;
-use GuzzleHttp\Client;
-use App\FoodCoupon;
-use App\FoodRegistration;
-use App\Team;
 
-
-
-class PaymentController extends Controller
+class HashhacksPaymentController extends Controller
 {
-
 	protected $parameters = array();
 	protected $event;
-	protected $check = array();
 
 	function __construct(Request $request)
 	{
-		$this->validate($request,User::$event_id_validation_rule);
+
+		$this->validate($request,User::$hashhacks_validation_rule);
 		$data = $request->all();
-		$this->event = Event::find($data['id']);
+		$this->event = Event::find(94674457);
 		if($u_id = User::where('email',$data['email'])->get()->first()){
             $this->parameters['udf4'] = $u_id->id;
         }
+		/*
 		if(isset($data['code'])){
 			$this->validate($request, User::$member_register_validation_rules);
 			$this->parameters['udf3'] = $data['code'];
@@ -53,6 +46,7 @@ class PaymentController extends Controller
 			}
 			
 		}
+		*/
     	
     	$this->parameters['firstname'] = $data['name'];
     	$this->parameters['email'] = $data['email'];
@@ -60,26 +54,21 @@ class PaymentController extends Controller
     	$this->parameters['txnid'] = $this->generateTransactionID();
     	$this->parameters['productinfo'] = $this->event->id;
     	$this->parameters['amount'] = $this->get_price();
-        $this->parameters['udf10'] = 1;
+    	$this->parameters['token'] = $data['token'];
+    	$this->parameters['udf5'] = 'hashhacks';
 
   	}
 
     public function payment(Request $request){
     	$this->register();
-
-    	if($this->parameters['amount'] <= 0.00){
-     		//$client = new Client();
-			//return $client->post(env('INDIPAY_SUCCESS_URL', '/success'), [
-    		//	'form_params' => $this->parameters
-			//]);
-            $endPoint = env('INDIPAY_SUCCESS_URL', '/success');
-            return \View::make('payment.payment')->with('parameters',$this->parameters)
-                             ->with('endPoint',$endPoint);
-    	}
-     	//$this->parameters['amount'] = 1.00; //capped transaction amount for testing
-     	
-      	$order = Indipay::prepare($this->parameters);
-      	return Indipay::process($order);
+     	if($this->parameters['token'] == 'Convoke is AWESOME'){
+     		$order = Indipay::prepare($this->parameters);
+      		return Indipay::process($order);
+     	}
+     	else{
+     		return "Invalid Credentials";
+     	}
+      	
     }
 
     public function generateTransactionID(){
@@ -97,11 +86,12 @@ class PaymentController extends Controller
            $price += ($price*3.10)/100;
         }
 
-    	if(isset($this->parameters['udf1'])){
+    	/*if(isset($this->parameters['udf1'])){
     		$food = FoodCoupon::find($this->parameters['udf1']);
     		$price = $price + $food->amount;
             $price += ($price*3.10)/100;
      	}
+     	*/
       	return $price;
     }
 
@@ -132,7 +122,7 @@ class PaymentController extends Controller
     	
 
     	
-
+    	/*
     	if($this->parameters['amount'] <= 0.00){
     		Registration::where('id',$register->id)->update(['verified'=>1]);
     	}
@@ -146,6 +136,7 @@ class PaymentController extends Controller
 	    		$food->save();	
 	    	}
     	}
+
 
     	if(isset($this->parameters['udf2'])){
     		//$check = Team::where('team_name',$this->parameters['udf2'])->get()->first();
@@ -167,7 +158,6 @@ class PaymentController extends Controller
     		$register->team()->attach($team->id);
     	}
     	//return 0;
+    	*/
     }
-    
-
 }

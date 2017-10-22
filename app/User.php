@@ -52,6 +52,13 @@ class User extends Authenticatable
         'g-recaptcha-response' => 'required|captcha'
     ];
 
+    public static $hashhacks_validation_rule = [
+        'name' => 'required',
+        'email' => 'required|email',
+        'phone' => 'required',
+        'token' => 'required'
+    ];
+
     public function registration(){
         return $this->hasMany(Registration::class);
     }

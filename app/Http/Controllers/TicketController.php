@@ -28,6 +28,14 @@ class TicketController extends Controller
     	else{
     		Event::where('id',$data['productinfo'])->update(['nm_tickets'=>$event->nm_tickets-1]);	
     	}
+
+        if(!empty($data['udf5'])){
+            $data['success'] = 1;
+            $data['download_link'] = url('/').$data['txnid'].'/download';
+            $endPoint = env('HASHHACKS_REDIRECT_URL', '/hashhacks/test');
+            return \View::make('payment.hashhackspayment')->with('parameters',$data)
+                             ->with('endPoint',$endPoint);
+        }
     	return view('pages.success',['event'=>$event,'txnid'=>$txnid,'user'=>$user,'team_name'=>$data['udf2']]);
     }
 
@@ -57,9 +65,20 @@ class TicketController extends Controller
             }
             //$delete = RegistrationTeam::where('registration_id',$check->id)->delete();
     		$delete = Registration::where('transaction_id',$data['txnid'])->delete();
-    		$user = User::where('id',$check->user_id)->delete();
+            if(empty($data['udf4'])){
+                $user = User::where('id',$check->user_id)->delete();    
+            }
+    		
     	}
-    	$event = Event::find($data['productinfo']);
+    	
+        if(!empty($data['udf5'])){
+            $data['success'] = 0;
+            $data['download_link'] = '';
+            $endPoint = env('HASHHACKS_REDIRECT_URL', '/hashhacks/test');
+            return \View::make('payment.hashhackspayment')->with('parameters',$data)
+                             ->with('endPoint',$endPoint);
+        }
+        $event = Event::find($data['productinfo']);
     	return view('pages.fail',['event'=>$event,'txnid'=>$data['txnid']]);
     }
 
@@ -99,5 +118,10 @@ class TicketController extends Controller
         $event = Event::find($registration->event_id);
         $user = User::find($register->user_id);
         return view('pdf.ticket',['registration'=>$registration,'event'=>$event,'user'=>$user]);
+    }
+
+    public function hashhackstest(Request $request){
+        $data = $request->all();
+        return $data;
     }
 }
