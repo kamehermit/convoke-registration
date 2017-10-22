@@ -60,7 +60,6 @@ class PaymentController extends Controller
     	$this->parameters['txnid'] = $this->generateTransactionID();
     	$this->parameters['productinfo'] = $this->event->id;
     	$this->parameters['amount'] = $this->get_price();
-        $this->parameters['udf10'] = 1;
 
   	}
 

@@ -27,7 +27,6 @@
         <input type=hidden name="udf3" value="{{ $parameters['udf3'] or '' }}">
         <input type=hidden name="udf4" value="{{ $parameters['udf4'] or '' }}">
         <input type=hidden name="udf5" value="{{ $parameters['udf5'] or '' }}">
-        <input type=hidden name="udf10" value="{{ $parameters['udf10'] or '' }}">
         <input type=hidden name="success" value="{{ $parameters['success'] or '' }}">
         <input type=hidden name="download_link" value="{{ $parameters['download_link'] or '' }}">
         <input type=hidden name="pg" value="{{ $parameters['pg'] or '' }}">
