@@ -14,6 +14,9 @@ use App\Team;
 class RegistrationController extends Controller
 {
     public function registration($event_id){
+        if($event_id == 94674457)
+            return redirect('http://register.hashhacks.tech');
+
     	$event_data = Event::find($event_id);
         if($event_data->participants > 1){
             return view('pages.team-registration',['event_data' => $event_data]);
@@ -22,6 +25,8 @@ class RegistrationController extends Controller
     }
 
     public function event($event_id){
+        if($event_id == 94674457)
+            return redirect('http://hashhacks.tech');
     	$event_data = Event::find($event_id);
     	return view('pages.event',['event_data' => $event_data]);
     }

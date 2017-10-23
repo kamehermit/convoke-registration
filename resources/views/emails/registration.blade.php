@@ -14,25 +14,28 @@ Amount: {{ $registration->amount }}</p>
 <p>You won't be allowed in without it. Both softcopy and hardcopy would do.</p>
 
 @if($registration->event_id != 94674457)
-@if(!empty($registration->team))
-<br>
-<p>Team Name:
-@foreach($registration->team as $team)
-	@if(!empty($team))
-		{{ $team->team_name }}	
-	@endif
-@endforeach 
+	@if(!empty($registration->team))
+	<br>
+	<p>Team Name:
+	@foreach($registration->team as $team)
+		@if(!empty($team))
+			{{ $team->team_name }}	
+		@endif
+	@endforeach 
 
-</p>
-<p>Make sure all your team-mates have registered for the event. Send this link to all your team-mates for team registrations: 
-@foreach($registration->team as $team)
-	@if(!empty($team))
-		{{ url('/event/'.$registration->event_id.'/registration/team/'.$team->code) }}
+	</p>
+	<p>Make sure all your team-mates have registered for the event. Send this link to all your team-mates for team registrations: 
+	@foreach($registration->team as $team)
+		@if(!empty($team))
+			{{ url('/event/'.$registration->event_id.'/registration/team/'.$team->code) }}
+		@endif
+	@endforeach
+	</p>
 	@endif
-@endforeach
-</p>
+@else
+	<span><span/>
 @endif
-@endif
+
 <br>
 
 <p><b>Venue of the event:</b></p>
@@ -48,7 +51,9 @@ North Campus, University of Delhi-110007</p>
 <br>
 
 @if($registration->event_id != 94674457)
-<p>Event Details: {{ url('/event/'.$registration->event_id) }}</p>
+	<p>Event Details: {{ url('/event/'.$registration->event_id) }}</p>
+@else
+	<span><span/>
 @endif
 
 <p>Your Unique Pass: {{ url($registration->transaction_id.'/download') }}</p>

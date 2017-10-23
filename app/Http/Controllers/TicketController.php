@@ -45,6 +45,20 @@ class TicketController extends Controller
     public function fail(Request $request){
     	$data = $request->all();
     	$check = Registration::where('transaction_id',$data['txnid'])->get()->first();
+        if(!empty($data['udf5'])){
+            $delete = FoodRegistration::where('registration_id',$check->id)->delete();
+            $check = Registration::where('transaction_id',$data['txnid'])->get()->first();
+            $user = User::find($check->user_id);
+            $data['success'] = 0;
+            $data['email'] = $user->email;
+            $data['download_link'] = '';
+
+            $delete = Registration::where('transaction_id',$data['txnid'])->delete();
+            
+            $endPoint = env('HASHHACKS_REDIRECT_URL', '/hashhacks/test');
+            return \View::make('payment.hashhackspayment')->with('parameters',$data)
+                             ->with('endPoint',$endPoint);
+        }
     	if($check){
     		if(!empty(Registration::find($check->id)->food_item))
     			$delete = FoodRegistration::where('registration_id',$check->id)->delete();
@@ -74,16 +88,7 @@ class TicketController extends Controller
     		
     	}
     	
-        if(!empty($data['udf5'])){
-            $check = Registration::where('transaction_id',$data['txnid'])->get()->first();
-            $user = User::find($check->user_id);
-            $data['success'] = 0;
-            $data['email'] = $user->email;
-            $data['download_link'] = '';
-            $endPoint = env('HASHHACKS_REDIRECT_URL', '/hashhacks/test');
-            return \View::make('payment.hashhackspayment')->with('parameters',$data)
-                             ->with('endPoint',$endPoint);
-        }
+        
         $event = Event::find($data['productinfo']);
     	return view('pages.fail',['event'=>$event,'txnid'=>$data['txnid']]);
     }

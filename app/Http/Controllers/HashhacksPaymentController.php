@@ -10,6 +10,8 @@ use App\Event;
 use Softon\Indipay\Facades\Indipay;  
 use Carbon\Carbon;
 use App\Registration;
+use App\FoodCoupon;
+use App\FoodRegistration;
 
 class HashhacksPaymentController extends Controller
 {
@@ -120,7 +122,13 @@ class HashhacksPaymentController extends Controller
    		$register->user_id = $user_id;
     	$register->save();
     	
-    	
+    	$food_items = FoodCoupon::find(2);
+    	foreach($food_items->items as $item){
+	    	$food = new FoodRegistration;
+	    	$food->registration_id = $register->id;
+	    	$food->food_item_id = $item->id;
+	    	$food->save();	
+	    }
 
     	
     	/*
