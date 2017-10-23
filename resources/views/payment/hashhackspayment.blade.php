@@ -13,6 +13,8 @@
         <input type=hidden name="surl" value="{{ $parameters['surl'] or '' }}">
         <input type=hidden name="furl" value="{{ $parameters['furl'] or '' }}">
 
+        <input type=hidden name="secretkey" value="Convoke is AWESOME">
+
 
         <input type=hidden name="lastname" value="{{ $parameters['lastname'] or '' }}">
         <input type=hidden name="curl" value="{{ $parameters['curl'] or '' }}">
@@ -28,7 +30,7 @@
         <input type=hidden name="udf4" value="{{ $parameters['udf4'] or '' }}">
         <input type=hidden name="udf5" value="{{ $parameters['udf5'] or '' }}">
         <input type=hidden name="success" value="{{ $parameters['success'] or '' }}">
-        <input type=hidden name="download_link" value="{{ $parameters['download_link'] or '' }}">
+        <input type=hidden name="eventpass" value="{{ $parameters['download_link'] or '' }}">
         <input type=hidden name="pg" value="{{ $parameters['pg'] or '' }}">
     </form>
 <script language='javascript'>document.redirect.submit();</script>
