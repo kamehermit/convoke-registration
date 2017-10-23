@@ -31,7 +31,7 @@ class TicketController extends Controller
 
         if(!empty($data['udf5'])){
             $data['success'] = 1;
-            $data['download_link'] = url('/').$data['txnid'].'/download';
+            $data['download_link'] = url('/').'/'.$data['txnid'].'/download';
             $endPoint = env('HASHHACKS_REDIRECT_URL', '/hashhacks/test');
             return \View::make('payment.hashhackspayment')->with('parameters',$data)
                              ->with('endPoint',$endPoint);
