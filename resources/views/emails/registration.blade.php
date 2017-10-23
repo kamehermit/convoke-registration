@@ -13,6 +13,7 @@ Amount: {{ $registration->amount }}</p>
 <p><b>IT IS MANDATORY FOR YOU TO BRING YOUR PASS TO THE EVENT.</b></p>
 <p>You won't be allowed in without it. Both softcopy and hardcopy would do.</p>
 
+@if($registration->event_id != 94674457)
 @if(!empty($registration->team))
 <br>
 <p>Team Name:
@@ -31,6 +32,7 @@ Amount: {{ $registration->amount }}</p>
 @endforeach
 </p>
 @endif
+@endif
 <br>
 
 <p><b>Venue of the event:</b></p>
@@ -44,7 +46,11 @@ North Campus, University of Delhi-110007</p>
 <br>
 <p>Make sure that you reach the venue at least 15-20 minutes before the event starts so that you can get settled by the time it begins. </p>
 <br>
+
+@if($registration->event_id != 94674457)
 <p>Event Details: {{ url('/event/'.$registration->event_id) }}</p>
+@endif
+
 <p>Your Unique Pass: {{ url($registration->transaction_id.'/download') }}</p>
 <br>
 <p>Thank You for helping to make Convoke awesome!</p>
