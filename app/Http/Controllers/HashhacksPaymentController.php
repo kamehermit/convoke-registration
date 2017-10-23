@@ -85,7 +85,7 @@ class HashhacksPaymentController extends Controller
     	   $price = $this->event->nm_tickets_amt;
            $price += ($price*3.10)/100;
         }
-        $price =1.00;
+        //$price =1.00;
 
     	/*if(isset($this->parameters['udf1'])){
     		$food = FoodCoupon::find($this->parameters['udf1']);
