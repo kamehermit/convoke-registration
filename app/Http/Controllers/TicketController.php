@@ -31,7 +31,7 @@ class TicketController extends Controller
 
         if(!empty($data['udf5'])){
             $check = Registration::where('transaction_id',$data['txnid'])->get()->first();
-            $user = User::find($check->id);
+            $user = User::find($check->user_id);
             $data['success'] = 1;
             $data['email'] = $user->email;
             $data['download_link'] = url('/').'/'.$data['txnid'].'/download';
@@ -76,7 +76,7 @@ class TicketController extends Controller
     	
         if(!empty($data['udf5'])){
             $check = Registration::where('transaction_id',$data['txnid'])->get()->first();
-            $user = User::find($check->id);
+            $user = User::find($check->user_id);
             $data['success'] = 0;
             $data['email'] = $user->email;
             $data['download_link'] = '';
