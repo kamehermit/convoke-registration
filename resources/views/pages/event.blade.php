@@ -112,13 +112,16 @@
 							<s>₹{{ $event_data->nm_tickets_amt }}</s>
 							<p>₹{{ $event_data->eb_tickets_amt }}</p>
 							<p style="font-size:18px;">Early Bird Discount!</p>
-						@elseif($event_data->nm_tickets_amt == 0.00)
+						@elseif($event_data->nm_tickets_amt == 0.00 && $event_data->nm_tickets!=0)
 							<p>Free Registration!</p>
+						@elseif($event_data->nm_tickets == 0)
+							<p>Sold Out!</p>	
 						@else
 							<p>₹{{ $event_data->nm_tickets_amt }}</p>
 						@endif
 					</div>
 					<div class="register-btn-container" align="center">
+					@if($event_data->nm_tickets!=0)
 						@if($event_data->participants == 1)
 							<a href="{{ url('/event').'/'.$event_data->id.'/registration' }}" class="btn btn-primary btn-lg register-btn" style="min-width: 200px;">REGISTER</a><br>
 							
@@ -126,7 +129,11 @@
 							<a href="{{ url('/event').'/'.$event_data->id.'/registration' }}" class="btn btn-primary btn-lg register-btn" style="min-width: 200px;">REGISTER TEAM</a><br>
 							
 						@endif
+					@else
 						
+
+					@endif
+
 					</div>
 				</div>
 				<div class="col-md-8 col-md-pull-4">

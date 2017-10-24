@@ -26,12 +26,12 @@ Route::group(['middleware' => ['api']],function(){
 	Route::post('/fail',['as' => 'fail','uses' => 'TicketController@fail']);
 	Route::post('/success',['as' => 'success','uses' => 'TicketController@success']);
 	Route::post('/hashhacks/payment',['as'=>'hashhackspayment','uses'=>'HashhacksPaymentController@payment']);
-	Route::post('/hashhacks/test',['as'=>'hashhackstest','uses'=>'TicketController@hashhackstest']);		
+	Route::post('/hashhacks/test',['as'=>'hashhackstest','uses'=>'TicketController@hashhackstest']); // Debugging route		
 });
 
 
 
-// Debugging urls
+// Debugging routes
 Route::get('/test',['as'=>'test','uses'=>'TicketController@test']);
 Route::get('/sendmail',['as'=>'sendmail','uses'=>'TicketController@send_mail']);
 Route::get('/test2',['as'=>'test2','uses'=>'TicketController@test2']);
