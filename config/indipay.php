@@ -62,7 +62,7 @@ return [
 
     // Add your response link here. In Laravel 5.2 you may use the api middleware instead of this.
     'remove_csrf_check' => [
-        'indipay/response','success','fail','hashhacks/payment','hashhacks/test',
+        'indipay/response','success','fail','hashhacks/payment','hashhacks/test', 'api/v1/login', 'api/v1/checkin', 'api/v1/refund', 'api.food', 'api.deliver'
     ],
 
 

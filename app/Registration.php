@@ -27,4 +27,12 @@ class Registration extends Model
     public function team(){
         return $this->belongsToMany(Team::class,'registration_teams','registration_id','team_id');
     }
+
+    public function scan(){
+        return $this->belongsToMany(Admin::class,'scans','registration_id','admin_id');
+    }
+
+    public function refund(){
+        return $this->hasMany(Refund::class);
+    }
 }

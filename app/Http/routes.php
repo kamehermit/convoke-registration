@@ -26,7 +26,14 @@ Route::group(['middleware' => ['api']],function(){
 	Route::post('/fail',['as' => 'fail','uses' => 'TicketController@fail']);
 	Route::post('/success',['as' => 'success','uses' => 'TicketController@success']);
 	Route::post('/hashhacks/payment',['as'=>'hashhackspayment','uses'=>'HashhacksPaymentController@payment']);
-	Route::post('/hashhacks/test',['as'=>'hashhackstest','uses'=>'TicketController@hashhackstest']); // Debugging route		
+	Route::post('/hashhacks/test',['as'=>'hashhackstest','uses'=>'TicketController@hashhackstest']); // Debugging route	
+
+	// Android App API routes
+	Route::post('/api/v1/login',['as'=>'api.login','uses'=>'ApiController@login']);
+	Route::get('/api/v1/checkin',['as'=>'api.checkin','uses'=>'ApiController@checkin']);
+	Route::post('/api/v1/refund',['as'=>'api.refund','uses'=>'ApiController@refund']);
+	Route::get('/api/v1/{id}/food',['as'=>'api.food','uses'=>'ApiController@food']);
+	Route::get('/api/v1/{id}/deliver',['as'=>'api.deliver','uses'=>'ApiController@deliver']);	
 });
 
 
