@@ -54,8 +54,10 @@
 										<s>₹{{ $event_data->nm_tickets_amt }}</s>
 										<p id="price">₹{{ $event_data->eb_tickets_amt }}*</p>
 										<p style="font-size:18px;">Early Bird Discount!</p>
-									@elseif($event_data->nm_tickets_amt == 0.00)
+									@elseif($event_data->nm_tickets_amt == 0.00 && $event_data->nm_tickets!=0)
 										<p id="price">₹{{ $event_data->nm_tickets_amt }}*</p>
+									@elseif($event_data->nm_tickets == 0)
+										<p>Sold Out!</p>
 									@else
 										<p id="price">₹{{ $event_data->nm_tickets_amt }}*</p>
 									@endif
@@ -89,8 +91,12 @@
 										<br>
 										{!! Form::text('phone',null, array('class' => 'form-control phone','placeholder'=>'Your Phone','id'=>'phone')) !!}
 										<br>
+										@if($event_data->nm_tickets!=0)
 										{!! app('captcha')->render(); !!}
   										{!! Form::submit('&nbsp;&nbsp;Proceed to Pay&nbsp;&nbsp;', array('class' => 'btn btn-default register-btn','name'=>'register','id'=>'register')) !!}
+  										@else
+  									
+  										@endif
   									</div>
   									
   								{!! Form::close() !!}
